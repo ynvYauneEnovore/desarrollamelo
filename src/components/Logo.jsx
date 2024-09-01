@@ -6,7 +6,10 @@ export function Logo(props) {
                 alt="Descripción del logo"
                 width={35}
             />
-            <p style={{ color: 'white', marginLeft: '10px' }}>YovanEnovore</p>
+            <p
+                style={{ marginLeft: '10px' }}
+                className="dark:text-zinc-400"
+            >YovanEnovore</p>
         </div>
     )
 }
