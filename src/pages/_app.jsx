@@ -21,15 +21,16 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Head>
-        {router.pathname === '/' ? (
-          <title>YovanEnovore</title>
-        ) : (
-          <title>{`${pageProps.title} - YovanEnovore`}</title>
-        )}
-        <meta name="description" content={pageProps.description} />
-      </Head>
-      <MDXProvider components={mdxComponents}>
+        <Head>
+            {router.pathname === '/' ? (
+                <title>YovanEnovore</title>
+            ) : (
+                <title>{`${pageProps.title} - YovanEnovore`}</title>
+            )}
+            <meta name="description" content={pageProps.description}/>
+            <link rel="icon" href="/favicon.webp"/>
+        </Head>
+        <MDXProvider components={mdxComponents}>
         <Layout {...pageProps}>
           <Component {...pageProps} />
         </Layout>

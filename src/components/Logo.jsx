@@ -2,7 +2,7 @@ export function Logo(props) {
     return (
         <div style={{ display: 'flex', alignItems: 'center' }} {...props}>
             <img
-                src="/desarrollamelo/desarrollamelo.png"
+                src="/favicon.webp"
                 alt="Descripción del logo"
                 width={35}
             />
