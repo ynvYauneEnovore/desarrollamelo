@@ -262,7 +262,7 @@ function SearchButton(props) {
         Find something...
         <kbd className="ml-auto text-2xs text-zinc-400 dark:text-zinc-500">
           <kbd className="font-sans">{modifierKey}</kbd>
-          <kbd className="font-sans">K</kbd>
+          <kbd className="font-sans">B</kbd>
         </kbd>
       </button>
       <button
@@ -308,7 +308,7 @@ function SearchDialog({ open, setOpen, className }) {
     }
 
     function onKeyDown(event) {
-      if (event.key === 'k' && (event.metaKey || event.ctrlKey)) {
+      if (event.key === 'b' && (event.metaKey || event.ctrlKey)) {
         event.preventDefault()
         setOpen(true)
       }
@@ -431,10 +431,10 @@ export function Search() {
         {...buttonProps}
       >
         <SearchIcon className="h-5 w-5 stroke-current" />
-        Find something...
+        Búscar...
         <kbd className="ml-auto text-2xs text-zinc-400 dark:text-zinc-500">
           <kbd className="font-sans">{modifierKey}</kbd>
-          <kbd className="font-sans">K</kbd>
+          <kbd className="font-sans">B</kbd>
         </kbd>
       </button>
       <SearchDialog className="hidden lg:block" {...dialogProps} />
