@@ -10,20 +10,61 @@ export const sections = [
   { title: 'Resources', id: 'resources' },
 ]
 
+
 <HeroPattern />
 
-# Presentación
 
-¡Hola! Soy Yovan Enovore. Nací en Beni, pero actualmente vivo y estudio en Sucre,
- la capital de nuestro país. Estoy en la etapa final de mi carrera de Ingeniería
-en Tecnología de la Información y Seguridad , y estoy en pleno proceso de defensa
-de mi proyecto de grado, con mención en software. {{ className: 'lead' }}
+<div className="flex justify-center items-center space-x-8">
+  <img
+    src="https://desarrollamelo.com/img/ico.png"
+    width="100px"
+    alt="light"
+    className="block dark:hidden"
+  />
 
-Cabe recalcar que, si hablo demasiado rápido, es porque la explicación es extensa
- y he resumido muchos puntos. Si tienen alguna pregunta o necesitan aclaraciones,
- siéntanse libres de interrumpir, especialmente si se trata de algo complejo.
- Para cuestiones menos complicadas, les recomiendo consultar la documentación proporcionada.
-Allí encontrarán todos los detalles y biografías necesarios.
+  <img
+    src="https://desarrollamelo.com/desarrollamelo-web-v2/images/5de525de38ab6accba11ce5c44afa434.png"
+    width="100px"
+    alt="dark"
+    className="hidden dark:block"
+  />
+
+  <div className="mb-10 group overflow-hidden relative after:duration-500 before:duration-500 duration-500 hover:after:duration-500 hover:after:translate-x-24 hover:before:translate-y-12 hover:before:-translate-x-32 hover:duration-500 after:absolute after:w-24 after:h-24 after:bg-sky-700 after:rounded-full after:blur-xl after:bottom-32 after:right-16 after:w-12 after:h-12 before:absolute before:w-20 before:h-20 before:bg-sky-400 before:rounded-full before:blur-xl before:top-20 before:right-16 before:w-12 before:h-12 hover:rotate-12 flex justify-center items-center h-56 w-80 bg-neutral-900 rounded-2xl outline outline-slate-400 -outline-offset-8">
+    <div className="z-10 flex flex-col items-center gap-2">
+      <span className="text-slate-400 text-6xl font-bold">JR</span>
+      <p className="text-gray-50">Frontend Developer</p>
+    </div>
+  </div>
+
+  <div className="mb-10 group overflow-hidden relative after:duration-500 before:duration-500 duration-500 hover:after:duration-500 hover:after:translate-x-24 hover:before:translate-y-12 hover:before:-translate-x-32 hover:duration-500 after:absolute after:w-24 after:h-24 after:bg-sky-700 after:rounded-full after:blur-xl after:bottom-32 after:right-16 after:w-12 after:h-12 before:absolute before:w-20 before:h-20 before:bg-sky-400 before:rounded-full before:blur-xl before:top-20 before:right-16 before:w-12 before:h-12 hover:rotate-12 flex justify-center items-center h-56 w-80 bg-neutral-900 rounded-2xl outline outline-slate-400 -outline-offset-8">
+    <div className="z-10 flex flex-col items-center gap-2">
+      <span className="text-slate-400 text-6xl font-bold">JR</span>
+      <p className="text-gray-50">Backend Developer</p>
+    </div>
+  </div>
+
+  <img
+    src="https://www.yovanenovore.site/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F9.4ba4edf2.jpg&w=384&q=75"
+    width="200px"
+  />
+</div>
+
+
+# Presentación de avances en Desarrollamelo
+
+
+¡Hola! Soy Yovan Enovore. Actualmente resido en Sucre, la capital de nuestro país. Estoy en la etapa final de mi carrera en Ingeniería de Tecnología de la Información y Seguridad, y actualmente estoy defendiendo mi proyecto de grado con mención en software.
+
+Es importante mencionar que, si hablo con rapidez, es debido a la extensión de la explicación, la cual he tratado de resumir. No duden en interrumpir si tienen preguntas, especialmente si se trata de algo complejo. Para cuestiones más sencillas, les sugiero consultar la documentación oficial que he proporcionado, donde encontrarán todos los detalles necesarios.
+
+Hoy, me gustaría compartir con ustedes mis experiencias en el desarrollo de proyectos clave a lo largo de mi formación académica. Esta presentación se estructurará en cuatro partes:
+
+1. **Objetivos Generales**: Primero, explicaré los objetivos generales de los proyectos en los que he estado involucrado.
+2. **Desarrollo**: A continuación, detallaré las tareas que realicé, paso a paso, durante el desarrollo de cada proyecto.
+3. **Lecciones Aprendidas**: Luego, abordaré las lecciones y conocimientos adquiridos a lo largo del proceso.
+4. **Conclusiones**: Finalmente, concluiré con un resumen y algunas reflexiones personales.
+
+Espero concluir en un máximo de 20 minutos, y estaré disponible para responder a cualquier pregunta que pueda surgir.
 
 <div class="group duration-500 hover:-skew-x-0 skew-x-6 hover:translate-x-2">
   <div class="group-hover:duration-400 relative rounded-2xl w-72 h-36 bg-zinc-800 text-gray-50 flex flex-col justify-center items-center gap-1 before:-skew-x-12  before:rounded-2xl  before:absolute before:content['']  before:bg-neutral-700 before:right-3 before:top-0 before:w-72 before:h-32 before:-z-10">
@@ -32,22 +73,10 @@ Allí encontrarán todos los detalles y biografías necesarios.
   </div>
 </div>
 
-<div className="not-prose mb-16 mt-6 flex gap-3">
-  <Button target="_blank" href="https://www.yovanenovore.site" arrow="right" children="Detalles" />
+<div className="not-prose mb-16 mt-6 flex gap-3 mt-10">
+  <Button target="_blank" href="https://www.yovanenovore.site" arrow="right" children="Sitio oficial" />
 </div>
 
-## Getting started {{ anchor: false }}
-
-To get started, create a new application in your [developer settings](#), then read about how to make requests for the resources you need to access using our HTTP APIs or dedicated client SDKs. When your integration is ready to go live, publish it to our [integrations directory](#) to reach the Protocol community. {{ className: 'lead' }}
-
-<div className="not-prose">
-  <Button
-    href="/sdks"
-    variant="text"
-    arrow="right"
-    children="Get your API key"
-  />
-</div>
 
 <Guides />
 
