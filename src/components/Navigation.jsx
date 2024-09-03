@@ -190,21 +190,11 @@ export const navigation = [
       { title: 'Introducción', href: '/' },
       { title: 'Documentación', href: '/documentation' },
       { title: 'Objetivos', href: '/objective' },
-      { title: 'Pagination', href: '/pagination' },
-      { title: 'Errors', href: '/errors' },
-      { title: 'Webhooks', href: '/webhooks' },
+      { title: 'Desarrollo', href: '/develoment' },
+      { title: 'Aprendizajes', href: '/Learning' },
     ],
   },
-  {
-    title: 'Resources',
-    links: [
-      { title: 'Contacts', href: '/contacts' },
-      { title: 'Conversations', href: '/conversations' },
-      { title: 'Messages', href: '/messages' },
-      { title: 'Groups', href: '/groups' },
-      { title: 'Attachments', href: '/attachments' },
-    ],
-  },
+
 ]
 
 export function Navigation(props) {

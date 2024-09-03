@@ -1,48 +1,23 @@
 import Image from 'next/image'
-
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
-import logoGo from '@/images/logos/go.svg'
-import logoNode from '@/images/logos/node.svg'
-import logoPhp from '@/images/logos/php.svg'
-import logoPython from '@/images/logos/python.svg'
-import logoRuby from '@/images/logos/ruby.svg'
+import logoAlpine from '@/images/logos/alpine.svg'
+import logoTailwind from '@/images/logos/tailwind.svg'
 
 const libraries = [
   {
-    href: 'Documentation',
-    name: 'PHP',
+    href: 'https://alpinejs.dev/',
+    name: 'Alpine.js',
     description:
-      'A popular general-purpose scripting language that is especially suited to web development.',
-    logo: logoPhp,
+      'Alpine es una herramienta robusta y minimalista para componer comportamiento directamente en tu marcado.',
+    logo: logoAlpine,
   },
   {
-    href: '#',
-    name: 'Ruby',
+    href: 'https://tailwindcss.com/',
+    name: 'Tailwind',
     description:
-      'A dynamic, open source programming language with a focus on simplicity and productivity.',
-    logo: logoRuby,
-  },
-  {
-    href: '#',
-    name: 'Node.js',
-    description:
-      'Node.js® is an open-source, cross-platform JavaScript runtime environment.',
-    logo: logoNode,
-  },
-  {
-    href: '#',
-    name: 'Python',
-    description:
-      'Python is a programming language that lets you work quickly and integrate systems more effectively.',
-    logo: logoPython,
-  },
-  {
-    href: '#',
-    name: 'Go',
-    description:
-      'An open-source programming language supported by Google with built-in concurrency.',
-    logo: logoGo,
+      'Un framework de CSS enfocado en utilidades, lleno de clases que se pueden combinar para construir cualquier diseño directamente en tu marcado.',
+    logo: logoTailwind,
   },
 ]
 
@@ -50,7 +25,7 @@ export function Libraries() {
   return (
     <div className="my-16 xl:max-w-none">
       <Heading level={2} id="official-libraries">
-        All used
+          Framework y líbrerias usadas
       </Heading>
       <div className="not-prose mt-4 grid grid-cols-1 gap-x-6 gap-y-10 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:max-w-none xl:grid-cols-3">
         {libraries.map((library) => (
@@ -63,8 +38,8 @@ export function Libraries() {
                 {library.description}
               </p>
               <p className="mt-4">
-                <Button href={library.href} variant="text" arrow="right">
-                  Read more
+                <Button href={library.href} variant="text" arrow="right" target="_blank">
+                  Ver más
                 </Button>
               </p>
             </div>

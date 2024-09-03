@@ -2,8 +2,9 @@ import { forwardRef, Fragment, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Transition } from '@headlessui/react'
-import { IconBrandGitlab } from '@tabler/icons-react';
-
+import Image from 'next/image';
+import logoGitlab from '@/images/logos/gitlab.svg'
+import logoGithub from '@/images/logos/github.svg'
 import { Button } from '@/components/Button'
 import { navigation } from '@/components/Navigation'
 
@@ -40,10 +41,10 @@ const FeedbackForm = forwardRef(function FeedbackForm({ onSubmit }, ref) {
       className="absolute inset-0 flex items-center justify-center gap-6 md:justify-start"
     >
       <p className="text-sm text-zinc-600 dark:text-zinc-400">
-        Was this page helpful?
+          ¿Te resultó útil esta página?
       </p>
       <div className="group grid h-8 grid-cols-[1fr,1px,1fr] overflow-hidden rounded-full border border-zinc-900/10 dark:border-white/10">
-        <FeedbackButton data-response="yes">Yes</FeedbackButton>
+        <FeedbackButton data-response="yes">Si</FeedbackButton>
         <div className="bg-zinc-900/10 dark:bg-white/10" />
         <FeedbackButton data-response="no">No</FeedbackButton>
       </div>
@@ -59,7 +60,7 @@ const FeedbackThanks = forwardRef(function FeedbackThanks(_props, ref) {
     >
       <div className="flex items-center gap-3 rounded-full bg-emerald-50/50 py-1 pl-1.5 pr-3 text-sm text-emerald-900 ring-1 ring-inset ring-emerald-500/20 dark:bg-emerald-500/5 dark:text-emerald-200 dark:ring-emerald-500/30">
         <CheckIcon className="h-5 w-5 flex-none fill-emerald-500 stroke-white dark:fill-emerald-200/20 dark:stroke-emerald-200" />
-        Thanks for your feedback!
+          ¡Gracias por tus comentarios!
       </div>
     </div>
   )
@@ -159,28 +160,25 @@ function PageNavigation() {
 }
 
 function GitLabIcon(props) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-         class="icon icon-tabler icons-tabler-outline icon-tabler-brand-gitlab"
-         {...props}
-    >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M21 14l-9 7l-9 -7l3 -11l3 7h6l3 -7z"/>
-    </svg>
-  )
+    return (
+        <Image
+            src={logoGitlab}
+            alt="GitLab Logo"
+            width={24}
+            height={24}
+            {...props}
+        />
+    );
 }
-
 function GitHubIcon(props) {
   return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-           className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
-      >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <path
-              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
-      </svg>
+      <Image
+          src={logoGithub}
+          alt="GitLab Logo"
+          width={24}
+          height={24}
+          {...props}
+      />
   )
 }
 
@@ -188,7 +186,7 @@ function SocialLink({ href, icon: Icon, children }) {
   return (
     <Link href={href} className="group" target={"_blank"}>
       <span className="sr-only">{children}</span>
-      <Icon className="text-zinc-600 dark:text-zinc-400 h-5 w-5 transition group-hover:fill-zinc-900 dark:group-hover:fill-zinc-500" />
+      <Icon className="text-zinc-600 dark:text-zinc-400 h-8 w-8 transition group-hover:fill-zinc-900 dark:group-hover:fill-zinc-500" />
     </Link>
   )
 }

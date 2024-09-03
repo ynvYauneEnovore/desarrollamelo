@@ -1,20 +1,22 @@
 import Link from 'next/link'
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion'
-
+import Image from 'next/image'
 import { GridPattern } from '@/components/GridPattern'
 import { Heading } from '@/components/Heading'
 import { ChatBubbleIcon } from '@/components/icons/ChatBubbleIcon'
 import { EnvelopeIcon } from '@/components/icons/EnvelopeIcon'
-import { UserIcon } from '@/components/icons/UserIcon'
-import { UsersIcon } from '@/components/icons/UsersIcon'
+import logoGpon from '@/images/logos/gpon.png'
+import logoSaint from '@/images/logos/saint.png'
+import logoMult from '@/images/logos/multi.png'
+import logoPlusCap from '@/images/logos/plusCap.png'
 
 const resources = [
   {
     href: '/contacts',
-    name: 'Proyectos',
+    name: 'Gpon group solutions',
     description:
-      'Objetivos clave en la participación en proyectos.',
-    icon: UserIcon,
+        'Gestión integral de servicios de Internet y televisión.',
+    icon: logoGpon,
     pattern: {
       y: 16,
       squares: [
@@ -25,10 +27,10 @@ const resources = [
   },
   {
     href: '/conversations',
-    name: 'Desarrollo',
+    name: 'Saint George',
     description:
-      'Learn about the conversation model and how to create, retrieve, update, delete, and list conversations.',
-    icon: ChatBubbleIcon,
+        'Administración y gestión de instituciones educativas.',
+    icon: logoSaint,
     pattern: {
       y: -6,
       squares: [
@@ -39,10 +41,24 @@ const resources = [
   },
   {
     href: '/messages',
-    name: 'Lecciones',
+    name: 'Multi Marcas',
     description:
-      'Learn about the message model and how to create, retrieve, update, delete, and list messages.',
-    icon: EnvelopeIcon,
+        'Administración de la venta de productos de librería.',
+    icon: logoMult,
+    pattern: {
+      y: 32,
+      squares: [
+        [0, 2],
+        [1, 4],
+      ],
+    },
+  },
+  {
+    href: '/messages',
+    name: 'Plus Capital',
+    description:
+        'Gestión y mantenimiento de landing pages.',
+    icon: logoPlusCap,
     pattern: {
       y: 32,
       squares: [
@@ -53,13 +69,17 @@ const resources = [
   }
 ]
 
-function ResourceIcon({ icon: Icon }) {
+
+function ResourceIcon({ icon }) {
   return (
-    <div className="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-900/5 ring-1 ring-zinc-900/25 backdrop-blur-[2px] transition duration-300 group-hover:bg-white/50 group-hover:ring-zinc-900/25 dark:bg-white/7.5 dark:ring-white/15 dark:group-hover:bg-emerald-300/10 dark:group-hover:ring-emerald-400">
-      <Icon className="h-5 w-5 fill-zinc-700/10 stroke-zinc-700 transition-colors duration-300 group-hover:stroke-zinc-900 dark:fill-white/10 dark:stroke-zinc-400 dark:group-hover:fill-emerald-300/10 dark:group-hover:stroke-emerald-400" />
-    </div>
-  )
+      <Image
+          src={icon}
+          alt="icon"
+          className="max-w-[80px] max-h-[50px] object-contain"
+      />  );
 }
+
+
 
 function ResourcePattern({ mouseX, mouseY, ...gridProps }) {
   let maskImage = useMotionTemplate`radial-gradient(180px at ${mouseX}px ${mouseY}px, white, transparent)`

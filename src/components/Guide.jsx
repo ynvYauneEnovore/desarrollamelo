@@ -3,26 +3,20 @@ import { Heading } from '@/components/Heading'
 
 const guide = [
   {
-    href: '/authentication',
+    href: '/objective',
     name: 'Objetivos',
-    description: 'Detalles sobre funcioanamiento globla de cada proyecto.',
+    description: 'Descripción glbal del proyecto',
   },
   {
     href: '/pagination',
     name: 'Desarrollo',
-    description: 'Optimizar la gestión de datos y respuestas a través de paginación y otras técnicas eficientes.',
+    description: 'Tareas desempeñadas a lo largo del proceso.',
   },
   {
     href: '/errors',
     name: 'Lecciones',
     description:
-      'Identificar y resolver errores comunes en las APIs y otros servicios integrados.',
-  },
-  {
-    href: '/webhooks',
-    name: 'Conclusiones',
-    description:
-      'Automatizar procesos clave, como la configuración de webhooks, para mejorar la integración entre sistemas.',
+      'Aprendizajes.',
   },
 ]
 
