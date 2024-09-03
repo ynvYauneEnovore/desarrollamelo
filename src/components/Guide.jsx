@@ -8,12 +8,12 @@ const guide = [
     description: 'Descripción glbal del proyecto',
   },
   {
-    href: '/pagination',
+    href: '/develoment',
     name: 'Desarrollo',
     description: 'Tareas desempeñadas a lo largo del proceso.',
   },
   {
-    href: '/errors',
+    href: '/Learning',
     name: 'Lecciones',
     description:
       'Aprendizajes.',

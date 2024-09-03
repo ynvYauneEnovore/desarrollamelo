@@ -12,7 +12,7 @@ import logoPlusCap from '@/images/logos/plusCap.png'
 
 const resources = [
   {
-    href: '/contacts',
+    href: 'https://gpon.desarrollamelo.com/login',
     name: 'Gpon group solutions',
     description:
         'Gestión integral de servicios de Internet y televisión.',
@@ -26,7 +26,7 @@ const resources = [
     },
   },
   {
-    href: '/conversations',
+    href: 'https://saintgeorge.desarrollamelo.com/',
     name: 'Saint George',
     description:
         'Administración y gestión de instituciones educativas.',
@@ -40,7 +40,7 @@ const resources = [
     },
   },
   {
-    href: '/messages',
+    href: 'https://www.multimarcas.com.bo/',
     name: 'Multi Marcas',
     description:
         'Administración de la venta de productos de librería.',
@@ -54,7 +54,7 @@ const resources = [
     },
   },
   {
-    href: '/messages',
+    href: 'https://pluscapital.desarrollamelo.com/',
     name: 'Plus Capital',
     description:
         'Gestión y mantenimiento de landing pages.',
@@ -137,7 +137,7 @@ function Resource({ resource }) {
       <div className="relative rounded-2xl px-4 pb-4 pt-16">
         <ResourceIcon icon={resource.icon} />
         <h3 className="mt-4 text-sm font-semibold leading-7 text-zinc-900 dark:text-white">
-          <Link href={resource.href}>
+          <Link href={resource.href} target={"_blank"}>
             <span className="absolute inset-0 rounded-2xl" />
             {resource.name}
           </Link>
