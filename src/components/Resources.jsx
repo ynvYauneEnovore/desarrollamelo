@@ -11,9 +11,9 @@ import { UsersIcon } from '@/components/icons/UsersIcon'
 const resources = [
   {
     href: '/contacts',
-    name: 'Contacts',
+    name: 'Proyectos',
     description:
-      'Learn about the contact model and how to create, retrieve, update, delete, and list contacts.',
+      'Objetivos clave en la participación en proyectos.',
     icon: UserIcon,
     pattern: {
       y: 16,
@@ -25,7 +25,7 @@ const resources = [
   },
   {
     href: '/conversations',
-    name: 'Conversations',
+    name: 'Desarrollo',
     description:
       'Learn about the conversation model and how to create, retrieve, update, delete, and list conversations.',
     icon: ChatBubbleIcon,
@@ -39,7 +39,7 @@ const resources = [
   },
   {
     href: '/messages',
-    name: 'Messages',
+    name: 'Lecciones',
     description:
       'Learn about the message model and how to create, retrieve, update, delete, and list messages.',
     icon: EnvelopeIcon,
@@ -50,18 +50,7 @@ const resources = [
         [1, 4],
       ],
     },
-  },
-  {
-    href: '/groups',
-    name: 'Groups',
-    description:
-      'Learn about the group model and how to create, retrieve, update, delete, and list groups.',
-    icon: UsersIcon,
-    pattern: {
-      y: 22,
-      squares: [[0, 1]],
-    },
-  },
+  }
 ]
 
 function ResourceIcon({ icon: Icon }) {

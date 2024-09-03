@@ -2,6 +2,7 @@ import { forwardRef, Fragment, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Transition } from '@headlessui/react'
+import { IconBrandGitlab } from '@tabler/icons-react';
 
 import { Button } from '@/components/Button'
 import { navigation } from '@/components/Navigation'
@@ -159,7 +160,6 @@ function PageNavigation() {
 
 function GitLabIcon(props) {
   return (
-
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-gitlab"
@@ -188,7 +188,7 @@ function SocialLink({ href, icon: Icon, children }) {
   return (
     <Link href={href} className="group" target={"_blank"}>
       <span className="sr-only">{children}</span>
-      <Icon className="h-5 w-5 fill-zinc-700 transition group-hover:fill-zinc-900 dark:group-hover:fill-zinc-500" />
+      <Icon className="text-zinc-600 dark:text-zinc-400 h-5 w-5 transition group-hover:fill-zinc-900 dark:group-hover:fill-zinc-500" />
     </Link>
   )
 }

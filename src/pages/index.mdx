@@ -1,4 +1,4 @@
-import { Guides } from '@/components/Guides'
+import { Guide } from '@/components/Guide'
 import { Resources } from '@/components/Resources'
 import { HeroPattern } from '@/components/HeroPattern'
 
@@ -6,8 +6,8 @@ export const description =
   'Learn everything there is to know about the Protocol API and integrate Protocol into your product.'
 
 export const sections = [
-  { title: 'Guides', id: 'guides' },
-  { title: 'Resources', id: 'resources' },
+  { title: 'Estructura', id: 'guide' },
+  { title: 'Proyectos', id: 'resources' },
 ]
 
 
@@ -51,24 +51,14 @@ export const sections = [
 
 
 
-# Presentaciónde avances
+# Presentación de avances
 
 
 ¡Hola! Soy Yovan Enovore. Actualmente resido en la ciudad de Sucre y estoy en la etapa final de mi carrera en Ingeniería en Tecnología de la Información y Seguridad. Actualmente, me encuentro en proceso de construcción de mi proyecto de grado, con mención en software.
 
 Si tienes dudas, especialmente sobre temas complejos, no dudes en preguntarme en cualquier momento. Para consultas más sencillas, te sugiero revisar la documentación oficial que he proporcionado, donde encontrarás todos los detalles necesarios sobre tecnologías mencionadas a continuación.
 
-<a href="https://www.yovanenovore.site" target="_blank">
-  <button class="cursor-pointer transition-all duration-500 hover:shadow-[0_15px_50px_-15px_#14532DFF] p-[12px] rounded-[24px] flex gap-4">
-    <svg class="h-12 w-12 bg-[#0a0a0a] shadow-xl rounded-full p-3" viewBox="0 0 24 24" fill="none">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.003 14H3.5v-4h11.502l-4.165-4.538 2.705-2.947 7.353 8.012c.747.813.747 2.133 0 2.947l-7.353 8.011-2.705-2.947L15.003 14z" fill="#F0F0F0"></path>
-    </svg>
-    <span class="text-[1.9rem] font-bold text-white pr-3">Documentación</span>
-  </button>
-</a>
-
-
-
+        <Button href="/documentation" arrow="right" children="Documentaciones" />
 
 Hoy, me gustaría compartir con ustedes mis experiencias en el desarrollo de proyectos clave a lo largo de mi formación académica. Esta presentación se estructurará en cuatro partes:
 
@@ -113,6 +103,6 @@ Sería una enorme ayuda para mi crecimiento personal y profesional si pudieras d
 
 
 
-<Guides />
+<Guide />
 
 <Resources />
